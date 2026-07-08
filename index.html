@@ -4,32 +4,33 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bishnu PDF Library</title>
-<link rel="stylesheet" href="style.css">
-</head>
 
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+</head>
 <body>
 
 <div class="container">
 
 <h1>📚 Bishnu PDF Library</h1>
 
-<p>Upload PDF and share with everyone.</p>
+<p>Upload PDF and Share with Everyone</p>
 
 <input type="file" id="pdfFile" accept=".pdf">
 
-<button id="uploadBtn">
-Upload PDF
-</button>
+<button id="uploadBtn">Upload PDF</button>
+
+<input type="text" id="search" placeholder="Search PDF">
 
 <div id="status"></div>
 
-<h2>Available PDFs</h2>
-
-<ul id="pdfList"></ul>
+<div id="pdfList"></div>
 
 </div>
 
-<script type="module" src="script.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
